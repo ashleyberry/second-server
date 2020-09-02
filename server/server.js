@@ -10,7 +10,7 @@ const app = express ();
 // serve static files from server/public folder
 app.use ( express.static ( 'server/public' ) );
 
-// Define a list of activities for my kid
+// Define a list of activities for Edan's kid
 let activities = [
     {
         activity: 'Typing practice',
@@ -29,7 +29,7 @@ let activities = [
     },
 ];
 
-// Endpoint:
+// Endpoint aka Route:
 // GET /activities 
 // Respond with a list of activities
 // ways that we handle the request and response
