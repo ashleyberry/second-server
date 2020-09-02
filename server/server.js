@@ -7,6 +7,9 @@ console.log( 'I am a server!' );
 // call the express function and assign return value as app
 const app = express ();
 
+// serve static files from server/public folder
+app.use ( express.static ( 'server/public' ) );
+
 //listen for requests
 //takes two arguments - a port number and an onReady callback function
 const port = 3000;
