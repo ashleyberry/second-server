@@ -8,6 +8,7 @@ function onReady () {
 // into client.js
 
 // AJAX!!!!
+// the tool that lets us make requests to our node server
 // lobs the ball back and forth between server and client
 // tell jquery where does our ajax need to go
 // makes request to back end
