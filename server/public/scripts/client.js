@@ -12,7 +12,8 @@ function onReady () {
 // tell jquery where does our ajax need to go
 // makes request to back end
 $.ajax( {
-    url: '/activities'
+    url: '/activities',
+    method: 'GET' // this method has to match with app.get function call
 } ).then( function ( activities ) { // passes response from url
     console.log( 'We got a response!', activities )
     // Render the activities
@@ -25,6 +26,12 @@ $.ajax( {
             </tr>
         `);
     } // end for loop
+} ).catch ( function ( errorInfo ) { 
+    // catch is common programming term for 
+    // if there's an error, let me catch it
+    console.log ( 'Something bad happened!', errorInfo );
+    alert( 'Server is down, try again later' );
+
 } ); // end Ajax .then ()
 
 } // end onReady
