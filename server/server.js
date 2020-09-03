@@ -29,12 +29,12 @@ app.get ( '/activities', function ( req, res ) {
 // POST /activities
 // create a new activity
 // and add it to our activities array
-app.post('/activities', function (req, res) {
-    console.log( 'I got a request!', req.body); //vanilla way to check if not using debugger
+app.post( '/activities', function ( req, res ) {
+    console.log( 'I got a request!', req.body ); //vanilla way to check if not using debugger
     let newActivity = req.body;
     // Add the new activity to our list of activities
-    activities.push(newActivity);
-    res.send(newActivity);
+    activities.push( newActivity );
+    res.send( newActivity );
 });
 
 //listen for requests
